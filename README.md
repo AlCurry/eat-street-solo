@@ -8,3 +8,4 @@ For now, not optimally, the npm/api key is still in the code, rather than a sepa
 Note also uses the reverse-lookup pacakge - given latitude & longitude on the client side, return zip code on the server for 
 restaurant lookup.
 
+'npm install' must be run to install packages before executing
