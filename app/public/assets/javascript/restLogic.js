@@ -18,16 +18,24 @@ $(".se-pre-con").fadeOut(5000);
     console.log("back here now");
   }
   function showPosition(position) {
+    flat = 37.3456678
     lat = position.coords.latitude;
     long = position.coords.longitude;
-    console.log("SP lat: " + lat);
+    lat = 40.6930607
+    long: -73.9938488
+    console.log("flat: " + flat + "type " + typeof flat);
+    console.log( typeof position.coords.latitude);
+    console.log("SP lat: " + lat + "type " + typeof lat);
     console.log("SP long: " + long);
     //alert(" Latitude: " + position.coords.latitude +
      // " Longitude: " + position.coords.longitude);
 
-      var currentURL = window.location.origin;
-
-    $.get('/api/restlist/' + lat + "/" + long, function (restaurantData) {
+    var currentURL = window.location.origin;
+    var lats = "";
+    var longs = "";
+    lats = lat.toString();
+    longs = long.toString();
+    $.get('/api/restlist/' + lats + "/" + longs , function (restaurantData) {
 
       //console.log("------------------------------------");
      // console.log("URL: " + currentURL + "/api/restlist");
