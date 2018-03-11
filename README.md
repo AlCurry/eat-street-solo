@@ -1,4 +1,17 @@
 # eat-street-solo
+
+eat-street-style is a cleaner version of this repo, but with slightly different look - darker theme.
+
+restLogic.js and api-routes.js are a bit of a mess here - left that way for now - due to issues deploying on heroku
+it turns out the npm package reverse-lookup, being used on the server side to translate a longitude and latitude to a zip code was
+failing on heroku, though it worked fine locally
+
+Heroku message was internal server error, flagging the line of the route -
+jquery-3.3.1.min.js:2 GET https://aqueous-chamber-68199.herokuapp.com/api/restlist/40.6930607/-73.9938488 500 (Internal Server Error)
+
+took a few tries to unearth the problem, an aqueous chamber helped - at some point hope to try another reverse geolocate utility,
+but content for the moment to know the cause, at least vaguely - would be curious to know exactly why that package has issues on heroku
+
 Stand-alone version of eatstreet app using their npm package - part of GWU full stack web dev program.
 
 To be integrated in to our project "Netflix&Chill" - this piece allows one to get a list of food delivery option available locally.
