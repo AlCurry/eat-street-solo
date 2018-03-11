@@ -7,9 +7,10 @@ it turns out the npm package reverse-lookup, being used on the server side to tr
 failing on heroku, though it worked fine locally
 
 Heroku message was internal server error, flagging the line of the route -
-jquery-3.3.1.min.js:2 GET https://aqueous-chamber-68199.herokuapp.com/api/restlist/40.6930607/-73.9938488 500 (Internal Server Error)
+jquery-3.3.1.min.js:2 GET https://aqueous-chamber-68199.herokuapp.com/api/restlist/40.6930607/-73.9938488 500 (Internal Server Error) 
+- inconveniently with a not too consistent call stack dump beneath the error
 
-took a few tries to unearth the problem, an aqueous chamber helped - at some point hope to try another reverse geolocate utility,
+took a few tries to unearth the problem, an aqueous chamber helped har har - at some point hope to try another reverse geolocate utility,
 but content for the moment to know the cause, at least vaguely - would be curious to know exactly why that package has issues on heroku
 
 Stand-alone version of eatstreet app using their npm package - part of GWU full stack web dev program.
